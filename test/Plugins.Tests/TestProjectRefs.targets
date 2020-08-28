@@ -5,6 +5,7 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
       <OutputItemType>_ResolvedTestProjectReference</OutputItemType>
+      <UndefineProperties>TargetFramework</UndefineProperties>
     </MultitargetTestProject>
     <TestProject>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

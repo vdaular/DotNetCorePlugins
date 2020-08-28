@@ -22,10 +22,16 @@ jobs:
     vmImage: $(vmImage)
   steps:
   - task: UseDotNet@2
-    displayName: Install .NET Core 3.1 SDK
+    displayName: Install .NET 5 SDK
+    inputs:
+      version: '5.x'
+      includePreviewVersions: true
+      packageType: sdk
+  - task: UseDotNet@2
+    displayName: Install .NET Core 3.1 runtime
     inputs:
       version: '3.1.x'
-      packageType: sdk
+      packageType: runtime
   - task: UseDotNet@2
     displayName: Install .NET Core 2.1 runtime
     inputs:
